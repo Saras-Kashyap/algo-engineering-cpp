@@ -1,6 +1,3 @@
-# Combined Unique Questions
-
-This document contains a deduplicated list of questions combined from the requested time periods.
 
 | Difficulty   | Title                                                     |   Frequency |   Acceptance Rate | Link                                                                                    | Topics                                                                                                     |
 |:-------------|:----------------------------------------------------------|------------:|------------------:|:----------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
