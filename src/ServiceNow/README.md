@@ -1,11 +1,7 @@
-# 📊 LeetCode Problem Breakdown
-
-> Curated list of all LeetCode problems sorted by frequency within each difficulty tier.
-
----
+### Problem Breakdown
 
 <details open id="-easy-problems">
-<summary><b>🟢 Easy Problems (10)</b></summary>
+<summary><b>🟢 Easy Problems (37)</b></summary>
 <br>
 
 | Difficulty | Title | Frequency | Acceptance | Link | Topics |

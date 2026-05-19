@@ -1,11 +1,7 @@
-# 📊 LeetCode Problem Breakdown
+### Problem Breakdown
 
-> Curated list of 6 LeetCode problems from README.md.
-
----
-
-<details open id="-medium-problems">
-<summary><b>🟡 Medium Problems (4)</b></summary>
+<details open id="-easy-problems">
+<summary><b>🟢 Easy Problems (37)</b></summary>
 <br>
 
 | Difficulty | Title | Frequency | Acceptance | Link | Topics |
