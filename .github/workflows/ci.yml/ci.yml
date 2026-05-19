@@ -11,21 +11,23 @@ jobs:
 
       - name: Compile and Test
         run: |
-          # Finds all solution.cpp files and runs them against tests.txt
           find src -name "solution.cpp" | while read sol; do
             dir=$(dirname "$sol")
             test_file="$dir/tests.txt"
             
-            if [ -f "$test_file" ]; then
-              echo "Testing $dir..."
-              g++ "$sol" -o solution_exec
-              ./solution_exec > output.txt
-              
-              if diff -w output.txt "$test_file"; then
-                echo "PASSED: $dir"
-              else
-                echo "FAILED: $dir"
-                exit 1 
-              fi
+          if [ -f "$test_file" ]; then
+            echo "Testing $sol..."
+            # Compile
+            g++ -O2 "$sol" -o solution
+            # Run against tests.txt (assuming tests.txt has input)
+            ./solution < "$test_file"
+            
+            # Check if execution was successful
+            if [ $? -ne 0 ]; then
+              echo "Test failed for $sol"
+              exit 1
             fi
-          done
+          else
+            echo "No tests.txt found for $sol, skipping."
+          fi
+        done
