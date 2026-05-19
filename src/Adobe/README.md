@@ -1,23 +1,7 @@
-# Adobe Interview Track
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Total%20Questions-112-blue?style=for-the-badge&logo=leetcode" />
-  <img src="https://img.shields.io/badge/Easy-28-🟢%20green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Medium-67-🟡%20yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Hard-17-🔴%20red?style=for-the-badge" />
-</p>
-
----
-
-### Quick Navigation
 * [🟢 Easy Questions](#-easy-problems-28)
 * [🟡 Medium Questions](#-medium-problems-67)
 * [🔴 Hard Questions](#-hard-problems-17)
-
----
-
 ### Problem Breakdown
-
 <details open id="-easy-problems-28">
 <summary><b>🟢 Easy Problems (28)</b></summary>
 <br>
