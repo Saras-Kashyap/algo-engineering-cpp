@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'src/**'
   workflow_dispatch:
 
 jobs:
@@ -15,19 +17,26 @@ jobs:
 
       - name: Compile and Test
         run: |
+          # Find all solution.cpp files
           find src -name "solution.cpp" | while read sol; do
+            # Get the directory of the current solution file
             dir=$(dirname "$sol")
+            
+            # Look for tests.txt in the same directory
             test_file="$dir/tests.txt"
             
             if [ -f "$test_file" ]; then
-              echo "Testing $sol..."
+              echo "-----------------------------------"
+              echo "Testing: $sol"
               g++ -O2 "$sol" -o solution
               ./solution < "$test_file"
-              if [ $? -ne 0 ]; then
-                echo "Test failed for $sol"
+              if [ $? -eq 0 ]; then
+                echo "SUCCESS: $sol passed."
+              else
+                echo "ERROR: Test failed for $sol"
                 exit 1
               fi
             else
-              echo "No tests.txt found for $sol, skipping."
+              echo "SKIP: No tests.txt found in $dir, skipping $sol"
             fi
           done
