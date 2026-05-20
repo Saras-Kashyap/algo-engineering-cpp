@@ -1,0 +1,36 @@
+# Longest Common Prefix
+
+## 🔗 LeetCode Link
+[https://leetcode.com/problems/longest-common-prefix/](https://leetcode.com/problems/longest-common-prefix/)
+
+## 📝 Description
+Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string `""`.
+
+## 💡 Examples
+
+**Example 1:**
+- **Input:** `strs = ["flower","flow","flight"]`
+- **Output:** `"fl"`
+
+**Example 2:**
+- **Input:** `strs = ["dog","racecar","car"]`
+- **Output:** `""`
+- **Explanation:** There is no common prefix among the input strings.
+
+## ⚙️ Constraints
+- `1 <= strs.length <= 200`
+- `0 <= strs[i].length <= 200`
+- `strs[i]` consists of only lowercase English letters.
+
+## ⏱️ Complexity
+| Metric | Complexity |
+| :--- | :--- |
+| **Time** | $O(S)$ where $S$ is the sum of all characters in all strings |
+| **Space** | $O(1)$ |
+
+## 💡 Notes
+- Horizontal scanning is the most space-efficient approach.
+- Start with the first string as the prefix and compare it character-by-character with subsequent strings, reducing the prefix length whenever a mismatch occurs.
+
+---
+*Status: [Verified by CI/CD Pipeline ✅]*
