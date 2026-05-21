@@ -20,9 +20,12 @@ We have built a Python automator that handles all boilerplate, folder creation, 
    ```bash
    python scripts/start.py --id [PROBLEM_ID] --topic [CATEGORY] --title "[PROBLEM TITLE]" --diff [Easy/Medium/Hard]
    ```
-   *Example:* ```bash
+   
+   *Example:*
+   ```bash
    python scripts/start.py --id 20 --topic stacks --title "Valid Parentheses" --diff Easy
    ```
+
 3. The script will instantly generate your `.hpp` file and your `_test.cpp` file in the correct folders. 
 4. Just write your logic, write your test cases, and push!
 
@@ -34,7 +37,7 @@ If you prefer to create the files manually, you **MUST** adhere strictly to the 
 #### 1. Write the Code & Add Metadata
 * Navigate to `src/` and find (or create) the appropriate topic folder (e.g., `src/arrays/`).
 * Create a `.hpp` file using the standard format: `[ID]_[Problem_Name].hpp` (e.g., `0001_two_sum.hpp`).
-* You **MUST** include this exact comment block at the very top of your `.hpp` file, immediately followed by your class logic:
+* You **MUST** include the exact comment block at the very top. You can use this prompt/template and just write this in your file:
 
 ```cpp
 /* * ID: 1 
