@@ -25,3 +25,7 @@ include_directories(src)
 add_executable(two_sum_test tests/arrays/two_sum_test.cpp)
 target_link_libraries(two_sum_test gtest_main)
 add_test(NAME TwoSumTest COMMAND two_sum_test)
+
+add_executable(best_time_to_buy_and_sell_stock_test tests/arrays/best_time_to_buy_and_sell_stock_test.cpp)
+target_link_libraries(best_time_to_buy_and_sell_stock_test gtest_main)
+add_test(NAME BestTimeToBuyAndSellStockTest COMMAND best_time_to_buy_and_sell_stock_test)
