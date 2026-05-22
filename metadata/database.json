@@ -7,18 +7,50 @@
             "category": "arrays",
             "companies": [
                 "Amazon",
+                "Microsoft",
                 "Google",
+                "Facebook",
                 "Apple",
-                "Adobe"
+                "Adobe",
+                "Oracle",
+                "Uber",
+                "Airbnb",
+                "Twitter",
+                "LinkedIn",
+                "Salesforce",
+                "Dropbox",
+                "eBay",
+                "PayPal",
+                "Intel",
+                "IBM",
+                "Cisco",
+                "Netflix"
             ]
         },
         {
             "id": 121,
-            "title": "best time to buy and sell",
+            "title": "Best Time to Buy and Sell Stock",
             "difficulty": "Easy",
             "category": "arrays",
             "companies": [
-                "*/"
+                "Amazon",
+                "Google",
+                "Facebook",
+                "Apple",
+                "Adobe",
+                "Oracle",
+                "Uber",
+                "Airbnb",
+                "Twitter",
+                "LinkedIn",
+                "Salesforce",
+                "Dropbox",
+                "eBay",
+                "PayPal",
+                "Intel",
+                "IBM",
+                "Cisco",
+                "Netflix"
             ]
         }
     ]
