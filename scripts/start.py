@@ -1,5 +1,6 @@
 import os
 import argparse
+import re
 
 def create_boilerplate():
     parser = argparse.ArgumentParser(description="Scaffold a new LeetCode C++ solution and test.")
@@ -14,8 +15,11 @@ def create_boilerplate():
     safe_title = args.title.lower().replace(" ", "_").replace("-", "_").replace("'", "")
     base_filename = f"{prob_id_str}_{safe_title}"
     
-    src_dir = os.path.join("src", args.topic)
-    test_dir = os.path.join("tests", args.topic)
+    # Ensure topic is strictly lowercase for Linux CI pipeline compatibility
+    safe_topic = args.topic.lower()
+    
+    src_dir = os.path.join("src", safe_topic)
+    test_dir = os.path.join("tests", safe_topic)
     
     os.makedirs(src_dir, exist_ok=True)
     os.makedirs(test_dir, exist_ok=True)
@@ -36,6 +40,7 @@ def create_boilerplate():
 class Solution {{
 public:
     // Paste your LeetCode function signature here.
+    
     // ⚠️ STRICT COMPILER REMINDERS (-Wall -Werror):
     // 1. Use std::size_t for looping through container.size()
     // 2. Ensure all code paths return a value
@@ -43,10 +48,18 @@ public:
 }};
 """
 
-    # 2. Generate Google Test File with Correct Pathing
-    test_suite_name = args.title.replace(" ", "").replace("-", "") + "Test"
+    # 2. Generate Google Test File with Safe C++ Naming
+    # Strip all non-alphanumeric characters (e.g., '&', '-', spaces)
+    safe_test_name = re.sub(r'[^a-zA-Z0-9]', '', args.title)
+    
+    # C++ identifiers cannot start with a number. If it does, prefix it with "LC"
+    if safe_test_name and safe_test_name[0].isdigit():
+        safe_test_name = "LC" + safe_test_name
+        
+    test_suite_name = safe_test_name + "Test"
+    
     cpp_content = f"""#include <gtest/gtest.h>
-#include "{args.topic}/{base_filename}.hpp" // Strictly pathed include
+#include "{safe_topic}/{base_filename}.hpp" // Strictly pathed and lowercased
 
 TEST({test_suite_name}, DefaultTest) {{
     Solution sol;

@@ -81,7 +81,6 @@ If you are unable to use the Python scaffolding script, you must manually create
      /* * ID: 1 
       * Title: Two Sum 
       * Difficulty: Easy 
-      * Companies: Amazon, Microsoft 
       */
      class Solution {
      public:
