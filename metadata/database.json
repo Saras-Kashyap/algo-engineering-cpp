@@ -76,13 +76,6 @@
             ]
         },
         {
-            "id": 26,
-            "title": "Remove Duplicates from Sorted Array",
-            "difficulty": "Easy",
-            "category": "arrays",
-            "companies": []
-        },
-        {
             "id": 121,
             "title": "Best Time to Buy and Sell Stock",
             "difficulty": "Easy",
