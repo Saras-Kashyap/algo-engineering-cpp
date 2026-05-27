@@ -16,7 +16,7 @@ Welcome to my LeetCode solutions directory! All solutions here are written in **
 | **0144** | Binary Tree Preorder Traversal | 🟩 Easy | `Trees` | **Cisco**, **Citadel**, **Google**, **Linkedln**, **Meta**, **NVIDIA**, **Oracle**, **Twitter**, **Uber** | [🔗 Link](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [💻 Code](./trees/0144_binary_tree_preorder_traversal.hpp) |
 | **0200** | Number of Islands | 🟨 Medium | `Graphs` | **Adobe**, **Amazon**, **Apple**, **Bloomberg**, **Google**, **Microsoft** | [🔗 Link](https://leetcode.com/problems/number-of-islands/) | [💻 Code](./graphs/0200_number_of_islands.hpp) |
 | **0207** | Course Schedule | 🟨 Medium | `Graphs` | **Atlassian**, **Cisco**, **Flipkart**, **JP Morgan**, **Snowflake**, **Zomato** | [🔗 Link](https://leetcode.com/problems/course-schedule/) | [💻 Code](./graphs/0207_course_schedule.hpp) |
-| **0542** | Zero One Matrix | 🟨 Medium | `Graphs` | **DEShaw**, **Snowflake** | [🔗 Link](https://leetcode.com/problems/zero-one-matrix/) | [💻 Code](./graphs/0542_zero_one_matrix.hpp) |
+| **0542** | Zero One Matrix | 🟨 Medium | `Graphs` | **DEShaw**, **Snowflake** | [🔗 Link](https://leetcode.com/problems/01-matrix/) | [💻 Code](./graphs/0542_zero_one_matrix.hpp) |
 | **0733** | Flood Fill | 🟩 Easy | `Graphs` | **Goldman Sachs** | [🔗 Link](https://leetcode.com/problems/flood-fill/) | [💻 Code](./graphs/0733_flood_fill.hpp) |
 | **0994** | Rotting Oranges | 🟨 Medium | `Graphs` | **Uber** | [🔗 Link](https://leetcode.com/problems/rotting-oranges/) | [💻 Code](./graphs/0994_rotting_oranges.hpp) |
 
