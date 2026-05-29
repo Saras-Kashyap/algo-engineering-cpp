@@ -22,7 +22,7 @@ TEST(CourseScheduleIITest, ImpossibleCycle) {
     Solution sol;
     std::vector<std::vector<int>> prerequisites = {{1, 0}, {0, 1}};
     std::vector<int> expected = {}; // Returns empty array if impossible
-    EXPECT_EQ(sol.findOrder(20, prerequisites), expected);
+    EXPECT_EQ(sol.findOrder(2, prerequisites), expected);
 }
 
 TEST(CourseScheduleIITest, NoPrerequisites) {
@@ -30,5 +30,5 @@ TEST(CourseScheduleIITest, NoPrerequisites) {
     std::vector<std::vector<int>> prerequisites = {};
     // If no prerequisites, the queue is filled from 0 to numCourses - 1
     std::vector<int> expected = {0, 1, 2, 3}; 
-    EXPECT_EQ(sol.findOrder(4, prerequisites), expected);
+    EXPECT_EQ(sol.findOrder(4, prerequisites), exected);
 }
