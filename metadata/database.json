@@ -223,6 +223,18 @@
             ]
         },
         {
+            "id": 269,
+            "title": "Alien Dictionary",
+            "difficulty": "Hard",
+            "category": "graphs",
+            "companies": [
+                "IBM",
+                "Microsoft",
+                "NVIDIA",
+                "Salesforce"
+            ]
+        },
+        {
             "id": 542,
             "title": "Zero One Matrix",
             "difficulty": "Medium",
