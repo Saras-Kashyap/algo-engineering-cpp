@@ -147,6 +147,24 @@
             ]
         },
         {
+            "id": 127,
+            "title": "Word Ladder",
+            "difficulty": "Hard",
+            "category": "graphs",
+            "companies": [
+                "Amazon",
+                "Apple",
+                "Citadel",
+                "Intuit",
+                "Linkedln",
+                "Microsoft",
+                "NVIDIA",
+                "Qualcomm",
+                "Salesforce",
+                "Tesla"
+            ]
+        },
+        {
             "id": 130,
             "title": "Surrounded Regions",
             "difficulty": "Medium",
