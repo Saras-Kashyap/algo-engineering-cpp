@@ -299,6 +299,15 @@
             ]
         },
         {
+            "id": 827,
+            "title": "Making A Large Island",
+            "difficulty": "Hard",
+            "category": "graphs",
+            "companies": [
+                "PayPal"
+            ]
+        },
+        {
             "id": 994,
             "title": "Rotting Oranges",
             "difficulty": "Medium",
