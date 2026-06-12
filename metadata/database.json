@@ -263,6 +263,15 @@
             ]
         },
         {
+            "id": 721,
+            "title": "Accounts Merge",
+            "difficulty": "Medium",
+            "category": "graphs",
+            "companies": [
+                "JP Morgan"
+            ]
+        },
+        {
             "id": 733,
             "title": "Flood Fill",
             "difficulty": "Easy",

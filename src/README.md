@@ -21,6 +21,7 @@ Welcome to my LeetCode solutions directory! All solutions here are written in **
 | **0210** | Course Schedule II | 🟨 Medium | `Toposort` | **Adobe**, **Amazon**, **Apple**, **Bloomberg**, **Meta**, **Microsoft** | [🔗 Link](https://leetcode.com/problems/course-schedule-ii/) | [💻 Code](./toposort/0210_course_schedule_ii.hpp) |
 | **0269** | Alien Dictionary | 🟥 Hard | `Graphs` | **IBM**, **Microsoft**, **NVIDIA**, **Salesforce** | [🔗 Link](https://leetcode.com/problems/alien-dictionary/) | [💻 Code](./graphs/0269_alien_dictionary.hpp) |
 | **0542** | Zero One Matrix | 🟨 Medium | `Graphs` | **DEShaw**, **Snowflake** | [🔗 Link](https://leetcode.com/problems/zero-one-matrix/) | [💻 Code](./graphs/0542_zero_one_matrix.hpp) |
+| **0721** | Accounts Merge | 🟨 Medium | `Graphs` | **JP Morgan** | [🔗 Link](https://leetcode.com/problems/accounts-merge/) | [💻 Code](./graphs/0721_accounts_merge.hpp) |
 | **0733** | Flood Fill | 🟩 Easy | `Graphs` | **Goldman Sachs** | [🔗 Link](https://leetcode.com/problems/flood-fill/) | [💻 Code](./graphs/0733_flood_fill.hpp) |
 | **0785** | Is Graph Bipartite? | 🟨 Medium | `Graphs` | **Databricks** | [🔗 Link](https://leetcode.com/problems/is-graph-bipartite?/) | [💻 Code](./graphs/0785_is_graph_bipartite?.hpp) |
 | **0802** | Find Eventual Safe States | 🟨 Medium | `Graphs` | **Intuit** | [🔗 Link](https://leetcode.com/problems/find-eventual-safe-states/) | [💻 Code](./graphs/0802_find_eventual_safe_states.hpp) |
